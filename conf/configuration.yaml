@@ -1,0 +1,178 @@
+external_converters:
+  - tuya-bodensensor.js
+homeassistant: false
+frontend: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://ha-msqtt:1883
+  user: hass
+  password: hass
+serial:
+  port: /dev/ttyUSB0
+advanced:
+  network_key:
+    - 40
+    - 116
+    - 61
+    - 113
+    - 44
+    - 156
+    - 233
+    - 168
+    - 63
+    - 191
+    - 221
+    - 248
+    - 205
+    - 204
+    - 21
+    - 1
+  pan_id: 9072
+  ext_pan_id:
+    - 2
+    - 96
+    - 94
+    - 2
+    - 220
+    - 96
+    - 16
+    - 51
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  last_seen: ISO_8601_local
+device_options:
+  legacy: false
+devices:
+  '0x3410f4fffe083d04':
+    friendly_name: HEIMAN/HS1SA/sensor-1
+    homeassistant:
+      name: ' '
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+  '0xa4c1386dffe1de40':
+    friendly_name: TuYa/WSD500A/sensor-1
+    homeassistant: {}
+    legacy: false
+    optimistic: true
+    retain: true
+    qos: 1
+  '0xa4c1382f84a81acf':
+    friendly_name: TuYa/TS0203/sensor-1
+    homeassistant: {}
+    legacy: false
+    optimistic: true
+    retain: true
+  '0xa4c138c4518ab21c':
+    friendly_name: TuYa/ZP01/sensor-1
+    homeassistant: {}
+    legacy: false
+    optimistic: true
+    retain: true
+  '0xa4c13871e408e8bc':
+    friendly_name: TuYa/ZTH01/sensor-1
+    homeassistant: {}
+    optimistic: true
+    qos: 1
+    retain: true
+  '0xa4c1387511a18d43':
+    friendly_name: TuYa/ZTH01/sensor-2
+    homeassistant: {}
+    optimistic: true
+    qos: 1
+    retain: true
+  '0xa4c13894fe939637':
+    friendly_name: TuYa/ZTH01/sensor-3
+    homeassistant: {}
+    optimistic: true
+    qos: 1
+    retain: true
+    temperature_precision: 3
+    humidity_precision: 3
+  '0xa4c138a1e3b84c63':
+    friendly_name: TuYa/HZ-SL01/sensor-1
+    homeassistant: {}
+    optimistic: true
+    qos: 1
+    retain: true
+  '0xe0798dfffeb8d04f':
+    friendly_name: '0xe0798dfffeb8d04f'
+  '0xa4c138fd1ad1e43d':
+    friendly_name: TuYa/TS011F-Plug1-1
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c1385369e4e712':
+    friendly_name: TuYa/TS011F-Plug1-2
+    homeassistant: {}
+    optimistic: true
+    retain: true
+    power_precision: 3
+    energy_precision: 3
+  '0xa4c1388a6a358887':
+    friendly_name: TuYa/TS011F-Plug1-3
+    homeassistant: {}
+    optimistic: true
+    retain: true
+    power_precision: 2
+  '0xa4c138ff8eafafea':
+    friendly_name: TuYa/TH02Z/sensor-1
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c138e831c1cdf5':
+    friendly_name: TuYa/TS011F-Plug1-4
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c138c718a78d18':
+    friendly_name: TuYa/TS011F-Plug1-5
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c1387c4c80ee42':
+    friendly_name: TuYa/TS011F-Plug1-6
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c13836db9d9862':
+    friendly_name: TuYa/TS011F-Plug1-7
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0x18fc260000a1ee2a':
+    friendly_name: Bosch/BTH-RA/T1
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c138cb5ca17a07':
+    friendly_name: TuYa/TS0201/S2
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c138168ae4a5fe':
+    friendly_name: TuYa/TS0201/S1
+    homeassistant: {}
+    optimistic: true
+    retain: true
+  '0xa4c138cd0605c6a2':
+    friendly_name: '0xa4c138cd0605c6a2'
+    homeassistant: {}
+    optimistic: true
+  '0xa4c13814ec0cf37c':
+    friendly_name: '0xa4c13814ec0cf37c'
+    homeassistant: {}
+    optimistic: true
+  '0x18fc260000a1af0b':
+    friendly_name: Bosch/BTH-RA/T2
+    homeassistant: {}
+    optimistic: true
+    retain: true
+groups: {}
+availability:
+  active:
+    timeout: 5
+  passive:
+    timeout: 12000
